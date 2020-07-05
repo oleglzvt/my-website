@@ -5,9 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oleg Lozovatyi</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Site under construction. Stay tuned!</h1>
-    <h1>Cool stuff in coming soon!</h1>
+    <header>
+        <div class="wrapper">
+            <nav class="header-nav">
+                <p class="logo">OL.</p>
+                <ul class="header-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <h1><span class="main-header">Welcome. I am</span>Oleg Lozovatyi</h1>
+            <p>Front-End Developer</p>
+    
+            <form action="get" action="resume.docx">
+                <button type="submit">Download CV</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="wrapper">
+
+                <h2>About Me</h2>
+
+                <div class="about-me">
+                    <p class="my-story">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad consectetur cum minima eaque corporis dolore, tempore quos autem quam rerum reiciendis! Optio velit molestias culpa saepe veniam, architecto quia hic inventore autem, accusantium voluptates laudantium quo eaque officia neque voluptatibus minus unde a ea magnam consectetur deleniti sit incidunt! Esse sunt repellendus facilis ea molestiae adipisci in corporis corrupti necessitatibus mollitia accusamus, assumenda vero perferendis voluptatum autem consequuntur dolorem accusantium. Autem vel iure recusandae esse in reprehenderit, non sed velit, dolorem expedita voluptas soluta exercitationem ipsa perferendis consequatur laborum. Temporibus atque veniam a molestiae officia. Eos eaque ea accusamus?
+                    </p>
+                    <img src="./assets/profile-picture.jpg" alt="oleg lozovatyi's portrait picture on white background">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="wrapper">
+
+                <h2>Skills</h2>
+
+                <div class="skils-icons">
+                    <i class="devicon-html5-plain"></i>
+                    <i class="devicon-css3-plain"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-jquery-plain"></i>
+                    <i class="devicon-react-original"></i>
+                    <i class="devicon-git-plain"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="wrapper">
+
+                <h2>Portfolio</h2>
+                
+                <div class="project-one">
+                    <img src="./assets/numberlicious-mockup.png" alt="macbook and iphone displaying title page of the numberlicious app">
+                    <p class="app-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur quam perspiciatis adipisci assumenda vel in molestiae optio, dicta tempora debitis minus distinctio recusandae voluptatibus?
+                    </p>
+                </div>
+                
+                <div class="project-two">
+                    <img src="./assets/pirate-draw-mockup.png" alt="macbook and iphone displaying title page of the pirate card draw game">
+                    <p class="app-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur quam perspiciatis adipisci assumenda vel in molestiae optio, dicta tempora debitis minus distinctio recusandae voluptatibus?
+                    </p>
+                </div>
+
+                <div class="project-three">
+                    <img src="./assets/supernatural-hunt-mockup.png" alt="macbook and iphone displaying title page of the supernatural hunt app">
+                    <p class="app-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur quam perspiciatis adipisci assumenda vel in molestiae optio, dicta tempora debitis minus distinctio recusandae voluptatibus?
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="wrapper">
+                <h2>Get in touch</h2>
+                <form action="">
+                    <div>
+                        <label class="sr-only" for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+    
+                        <label class="sr-only" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+    
+                    <label class="sr-only" for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="7" maxlength="200" placeholder="Message"></textarea>
+    
+                    <button>Send a message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-medium-m"></i></a></li>
+            </ul>
+        </nav>
+        <p>&copy; Oleg Lozovatyi 2020</p>
+    </footer>
 </body>
 </html>
