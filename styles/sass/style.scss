@@ -12,15 +12,38 @@ h2 {
 }
 
 button {
-    border: 1px solid $border;
+    border: 2px solid $border;
     background: none;
     padding: 10px 20px;
         &:hover,
         &:focus,
         &:focus-within {
             cursor: pointer;
-            border: 1px solid $textColor;
+            border: 2px solid $textColor;
         }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+input,
+textarea {
+    width: 30%;
+    font-size: 1.8rem;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid $border;
+    background: none;
+}
+
+
+textarea {
+    width: 74%;
+    margin: 40px 0;
+    resize: none;
 }
 
 // header styling
@@ -38,9 +61,6 @@ header {
 }
 
 ul.header-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
     align-items: center;
     margin: 0;
         li {
@@ -90,8 +110,90 @@ ul.header-links {
         div {
             width: 40%;
             height: 0;
-            border: 1px solid $border;
+            border-bottom: 1px solid $border;
         }
 }
 
 // skills section styling
+.skills {
+    margin-top: 100px;
+    padding-bottom: 80px;
+        .skills-icons {
+            display: flex;
+            justify-content: space-evenly;
+                i {
+                    font-size: 6rem;
+                }
+                p {
+                    visibility: hidden;
+                }
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                        &:hover p,
+                        &:focus p,
+                        &:focus-within p{
+                            visibility: visible;
+                        }
+                }
+        }
+}
+
+// projects section styling
+.project {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+        .project-image,
+        .project-description {
+            width: 45%;
+        }
+        .project-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }   
+}
+
+.project-two,
+.project-four {
+    .project-description {
+        order: -1;
+    }
+}
+
+// contact section styling
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    padding-bottom: 70px;
+        div {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+}
+
+// footer styling
+footer {
+    .social-links {
+        width: 20%;
+        justify-content: space-between;
+        margin: 0 auto;
+            li a{
+                padding: 10px;
+                    &:hover,
+                    &:focus,
+                    &:focus-within {
+                        color: $border;
+                    }
+            }
+    }
+    p {
+        text-align: center;
+        padding: 20px 0;
+    }
+}

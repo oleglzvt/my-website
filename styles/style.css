@@ -269,7 +269,9 @@ button {
   font-weight: 400;
 }
 
-a {
+a,
+.title,
+button {
   font-size: 2rem;
 }
 
@@ -295,15 +297,18 @@ p {
   font-size: 1.8rem;
 }
 
-.title, button {
-  font-size: 2rem;
-}
-
 header,
 .skills,
-.contact,
-footer {
+.contact {
   background-color: #E8E8E8;
+}
+
+.copyright {
+  font-size: 1rem;
+}
+
+.social-links li a:hover, .social-links li a:focus, .social-links li a:focus-within {
+  color: #BCBCBC;
 }
 
 h1 {
@@ -316,14 +321,38 @@ h2 {
 }
 
 button {
-  border: 1px solid #BCBCBC;
+  border: 2px solid #BCBCBC;
   background: none;
   padding: 10px 20px;
 }
 
 button:hover, button:focus, button:focus-within {
   cursor: pointer;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input,
+textarea {
+  width: 30%;
+  font-size: 1.8rem;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #BCBCBC;
+  background: none;
+}
+
+textarea {
+  width: 74%;
+  margin: 40px 0;
+  resize: none;
 }
 
 header {
@@ -345,11 +374,6 @@ header {
 }
 
 ul.header-links {
-  list-style: none;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -427,5 +451,127 @@ ul.header-links li a:focus-within {
 .header-line div {
   width: 40%;
   height: 0;
-  border: 1px solid #BCBCBC;
+  border-bottom: 1px solid #BCBCBC;
+}
+
+.skills {
+  margin-top: 100px;
+  padding-bottom: 80px;
+}
+
+.skills .skills-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.skills .skills-icons i {
+  font-size: 6rem;
+}
+
+.skills .skills-icons p {
+  visibility: hidden;
+}
+
+.skills .skills-icons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skills-icons div:hover p,
+.skills .skills-icons div:focus p,
+.skills .skills-icons div:focus-within p {
+  visibility: visible;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.project .project-image,
+.project .project-description {
+  width: 45%;
+}
+
+.project .project-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-two .project-description,
+.project-four .project-description {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+  padding-bottom: 70px;
+}
+
+.contact-form div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .social-links {
+  width: 20%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+footer .social-links li a {
+  padding: 10px;
+}
+
+footer .social-links li a:hover, footer .social-links li a:focus, footer .social-links li a:focus-within {
+  color: #BCBCBC;
+}
+
+footer p {
+  text-align: center;
+  padding: 20px 0;
 }

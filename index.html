@@ -17,9 +17,9 @@
                 <p class="logo">OL.</p>
                 <ul class="header-links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
     
@@ -35,7 +35,7 @@
     </header>
 
     <main>
-        <section class="about">
+        <section id="about" class="about">
             <div class="wrapper">
 
                 <div class="header-line">
@@ -56,56 +56,116 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <div class="wrapper">
 
-                <h2>Skills</h2>
+                <div class="header-line">
+                    <div></div>
+                    <h2>Skills</h2>
+                    <div></div>
+                </div>
 
-                <div class="skils-icons">
-                    <i class="devicon-html5-plain"></i>
-                    <i class="devicon-css3-plain"></i>
-                    <i class="devicon-javascript-plain"></i>
-                    <i class="devicon-jquery-plain"></i>
-                    <i class="devicon-react-original"></i>
-                    <i class="devicon-git-plain"></i>
+                <div class="skills-icons">
+                    <div>
+                        <i class="devicon-html5-plain"></i>
+                        <p>HTML 5</p>
+                    </div>
+                    <div>
+                        <i class="devicon-css3-plain"></i>
+                        <p>CSS 3</p>
+                    </div>
+                    <div>
+                        <i class="devicon-javascript-plain"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div>
+                        <i class="devicon-jquery-plain"></i>
+                        <p>jQuery</p>
+                    </div>
+                    <div>
+                        <i class="devicon-react-original"></i>
+                        <p>React.js</p>
+                    </div>
+                    <div>
+                        <i class="devicon-git-plain"></i>
+                        <p>Git</p>
+                    </div>
+                    <div>
+                        <i class="devicon-github-plain"></i>
+                        <p>GitHub</p>
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <section class="portfolio">
+        <section id="projects" class="projects">
             <div class="wrapper">
 
-                <h2>Portfolio</h2>
-                
-                <div class="project-one">
-                    <img src="./assets/numberlicious-mockup.png" alt="macbook and iphone displaying title page of the numberlicious app">
-                    <p class="app-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur quam perspiciatis adipisci assumenda vel in molestiae optio, dicta tempora debitis minus distinctio recusandae voluptatibus?
-                    </p>
+                <div class="header-line">
+                    <div></div>
+                    <h2>Projects</h2>
+                    <div></div>
                 </div>
                 
-                <div class="project-two">
-                    <img src="./assets/pirate-draw-mockup.png" alt="macbook and iphone displaying title page of the pirate card draw game">
-                    <p class="app-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur quam perspiciatis adipisci assumenda vel in molestiae optio, dicta tempora debitis minus distinctio recusandae voluptatibus?
-                    </p>
+                <div class="project project-one">
+                    <div class="project-image">
+                        <img src="./assets/numberlicious-mockup.png" alt="macbook and iphone displaying title page of the numberlicious app">
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur quam perspiciatis adipisci assumenda vel in molestiae optio, dicta tempora debitis minus distinctio recusandae voluptatibus?
+                        </p>
+                        <div>
+                            <button>Github</button>
+                            <button>View live</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project project-two">
+                    <div class="project-image">
+                        <img src="./assets/pirate-draw-mockup.png" alt="macbook and iphone displaying title page of the pirate card draw game">
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur quam perspiciatis adipisci assumenda vel in molestiae optio, dicta tempora debitis minus distinctio recusandae voluptatibus?
+                        </p>
+                        <div>
+                            <button>Github</button>
+                            <button>View live</button>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="project-three">
-                    <img src="./assets/supernatural-hunt-mockup.png" alt="macbook and iphone displaying title page of the supernatural hunt app">
-                    <p class="app-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur quam perspiciatis adipisci assumenda vel in molestiae optio, dicta tempora debitis minus distinctio recusandae voluptatibus?
-                    </p>
+                <div class="project project-three">
+                    <div class="project-image">
+                        <img src="./assets/supernatural-hunt-mockup.png" alt="macbook and iphone displaying title page of the supernatural hunt app">
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur quam perspiciatis adipisci assumenda vel in molestiae optio, dicta tempora debitis minus distinctio recusandae voluptatibus?
+                        </p>
+                        <div>
+                            <button>Github</button>
+                            <button>View live</button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="wrapper">
-                <h2>Get in touch</h2>
-                <form action="">
+
+                <div class="header-line">
+                    <div></div>
+                    <h2>Get in touch</h2>
+                    <div></div>
+                </div>
+
+                <form class="contact-form" action="">
                     <div>
                         <label class="sr-only" for="name">Name</label>
                         <input type="text" name="name" id="name" placeholder="Name">
@@ -124,15 +184,17 @@
     </main>
 
     <footer>
-        <nav class="footer-nav">
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                <li><a href="#"><i class="fab fa-medium-m"></i></a></li>
-            </ul>
-        </nav>
-        <p>&copy; Oleg Lozovatyi 2020</p>
+        <div class="wrapper">
+            <nav class="footer-nav">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-medium-m"></i></a></li>
+                </ul>
+            </nav>
+            <p class="copyright">&copy; 2020 Oleg Lozovatyi</p>
+        </div>
     </footer>
 
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>

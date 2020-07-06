@@ -24,7 +24,9 @@ button {
     font-weight: 400;
 } 
 
-a {
+a,
+.title,
+button {
     font-size: 2rem;
 }
 
@@ -50,13 +52,20 @@ p {
     font-size: 1.8rem;
 }
 
-.title, button {
-    font-size: 2rem;
-}
-
 header,
 .skills,
-.contact,
-footer {
+.contact {
     background-color: $mainBackground;
+}
+
+.copyright {
+    font-size: 1rem;
+}
+
+.social-links li a {
+    &:hover,
+    &:focus,
+    &:focus-within {
+        color: $border;
+    }
 }
