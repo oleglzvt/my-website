@@ -249,3 +249,131 @@ img {
   width: 100%;
   display: block;
 }
+
+h1,
+h2,
+a,
+.logo,
+button {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.logo {
+  font-size: 4rem;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+.main-header {
+  display: block;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+button {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+header,
+.skills,
+.contact,
+footer {
+  background-color: #E8E8E8;
+}
+
+header {
+  height: 100vh;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #BCBCBC;
+}
+
+.header-nav .logo {
+  margin: 20px 0;
+}
+
+ul.header-links {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+ul.header-links li {
+  margin-left: 30px;
+}
+
+ul.header-links li a:hover,
+ul.header-links li a:focus,
+ul.header-links li a:focus-within {
+  border-bottom: 2px solid #000000;
+}
+
+h1 {
+  margin: 0;
+}
+
+.main-header {
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 20px 0 50px 0;
+}
+
+button {
+  border: 1px solid #BCBCBC;
+  background: none;
+  padding: 10px 20px;
+}
+
+button:hover, button:focus, button:focus-within {
+  cursor: pointer;
+  border: 1px solid #000000;
+}
+
+.header-intro {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

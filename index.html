@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
     <header>
         <div class="wrapper">
@@ -21,12 +23,14 @@
                 </ul>
             </nav>
     
-            <h1><span class="main-header">Welcome. I am</span>Oleg Lozovatyi</h1>
-            <p>Front-End Developer</p>
-    
-            <form action="get" action="resume.docx">
-                <button type="submit">Download CV</button>
-            </form>
+            <div class="header-intro">
+                <h1><span class="main-header">Welcome. I am</span>Oleg Lozovatyi</h1>
+                <p class="title">Front-End Developer</p>
+        
+                <form action="get" action="resume.docx">
+                    <button type="submit">Download CV</button>
+                </form>
+            </div>
         </div>
     </header>
 
@@ -124,5 +128,8 @@
         </nav>
         <p>&copy; Oleg Lozovatyi 2020</p>
     </footer>
+
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -1,1 +1,62 @@
 @import 'setup';
+@import 'typographyAndColors';
+
+header {
+    height: 100vh;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $border;
+     .logo {
+         margin: 20px 0;
+     }
+}
+
+ul.header-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+        li {
+            margin-left: 30px;
+                a:hover,
+                a:focus,
+                a:focus-within {
+                    border-bottom: 2px solid $textColor;
+                }
+        }
+}
+
+h1 {
+    margin: 0;
+}
+
+.main-header {
+    margin-bottom: 20px;
+}
+
+.title {
+    margin: 20px 0 50px 0;
+}
+
+button {
+    border: 1px solid $border;
+    background: none;
+    padding: 10px 20px;
+        &:hover,
+        &:focus,
+        &:focus-within {
+            cursor: pointer;
+            border: 1px solid $textColor;
+        }
+}
+
+.header-intro {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

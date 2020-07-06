@@ -1,0 +1,57 @@
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+$mainBackground: #E8E8E8;
+$secondaryBackground: #FFFFFF;
+$textColor: #000000;
+$border: #BCBCBC;
+
+h1,
+h2,
+a,
+.logo,
+button {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: $textColor;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.logo {
+    font-size: 4rem;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+.main-header {
+    display: block;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+button {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+header,
+.skills,
+.contact,
+footer {
+    background-color: $mainBackground;
+}
