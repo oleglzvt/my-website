@@ -51,8 +51,6 @@ $(document).ready(function(){
     })
 
     $('#go-back').on('click', function() {
-        window.open(
-            './index.html'
-        ) 
+        window.location.href = './index.html'
     })
 });
