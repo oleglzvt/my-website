@@ -17,9 +17,15 @@ button {
     text-decoration: none;
 }
 
+a,
+h2,
+.main-header,
+button {
+    font-weight: 400;
+} 
+
 a {
     font-size: 2rem;
-    font-weight: 400;
 }
 
 .logo {
@@ -30,22 +36,21 @@ h1 {
     font-size: 5.5rem;
 }
 
+h2,
+.main-header {
+    font-size: 3rem;
+}
+
 .main-header {
     display: block;
-    font-weight: 400;
-    font-size: 3rem;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
 }
 
-.title {
-    font-size: 2rem;
-}
-
-button {
-    font-weight: 400;
+.title, button {
     font-size: 2rem;
 }
 

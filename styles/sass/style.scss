@@ -1,6 +1,29 @@
 @import 'setup';
 @import 'typographyAndColors';
 
+// general styling
+h1 {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 60px 0;
+}
+
+button {
+    border: 1px solid $border;
+    background: none;
+    padding: 10px 20px;
+        &:hover,
+        &:focus,
+        &:focus-within {
+            cursor: pointer;
+            border: 1px solid $textColor;
+        }
+}
+
+// header styling
 header {
     height: 100vh;
 }
@@ -25,13 +48,9 @@ ul.header-links {
                 a:hover,
                 a:focus,
                 a:focus-within {
-                    border-bottom: 2px solid $textColor;
+                    border-bottom: 2px solid $border;
                 }
         }
-}
-
-h1 {
-    margin: 0;
 }
 
 .main-header {
@@ -42,21 +61,37 @@ h1 {
     margin: 20px 0 50px 0;
 }
 
-button {
-    border: 1px solid $border;
-    background: none;
-    padding: 10px 20px;
-        &:hover,
-        &:focus,
-        &:focus-within {
-            cursor: pointer;
-            border: 1px solid $textColor;
-        }
-}
-
 .header-intro {
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+// about section styling
+.about-me {
+    display: flex;
+    justify-content: space-between;
+     p,
+     .profile-image {
+         width: 40%;
+     }
+     p {
+         display: flex;
+         align-items: center;
+         line-height: 2;
+     }
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        div {
+            width: 40%;
+            height: 0;
+            border: 1px solid $border;
+        }
+}
+
+// skills section styling

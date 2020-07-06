@@ -262,9 +262,15 @@ button {
   text-decoration: none;
 }
 
+a,
+h2,
+.main-header,
+button {
+  font-weight: 400;
+}
+
 a {
   font-size: 2rem;
-  font-weight: 400;
 }
 
 .logo {
@@ -275,22 +281,21 @@ h1 {
   font-size: 5.5rem;
 }
 
+h2,
+.main-header {
+  font-size: 3rem;
+}
+
 .main-header {
   display: block;
-  font-weight: 400;
-  font-size: 3rem;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
 }
 
-.title {
-  font-size: 2rem;
-}
-
-button {
-  font-weight: 400;
+.title, button {
   font-size: 2rem;
 }
 
@@ -299,6 +304,26 @@ header,
 .contact,
 footer {
   background-color: #E8E8E8;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 60px 0;
+}
+
+button {
+  border: 1px solid #BCBCBC;
+  background: none;
+  padding: 10px 20px;
+}
+
+button:hover, button:focus, button:focus-within {
+  cursor: pointer;
+  border: 1px solid #000000;
 }
 
 header {
@@ -338,11 +363,7 @@ ul.header-links li {
 ul.header-links li a:hover,
 ul.header-links li a:focus,
 ul.header-links li a:focus-within {
-  border-bottom: 2px solid #000000;
-}
-
-h1 {
-  margin: 0;
+  border-bottom: 2px solid #BCBCBC;
 }
 
 .main-header {
@@ -351,17 +372,6 @@ h1 {
 
 .title {
   margin: 20px 0 50px 0;
-}
-
-button {
-  border: 1px solid #BCBCBC;
-  background: none;
-  padding: 10px 20px;
-}
-
-button:hover, button:focus, button:focus-within {
-  cursor: pointer;
-  border: 1px solid #000000;
 }
 
 .header-intro {
@@ -376,4 +386,46 @@ button:hover, button:focus, button:focus-within {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-me p,
+.about-me .profile-image {
+  width: 40%;
+}
+
+.about-me p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 2;
+}
+
+.header-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-line div {
+  width: 40%;
+  height: 0;
+  border: 1px solid #BCBCBC;
 }
