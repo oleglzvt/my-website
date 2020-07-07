@@ -49,6 +49,7 @@ textarea {
 // header styling
 header {
     height: 100vh;
+    min-height: 360px;
 }
 
 .header-nav {
@@ -60,7 +61,7 @@ header {
         }
 }
 
-ul.header-links {
+.header-links {
     align-items: center;
     margin: 0;
         li {
@@ -71,6 +72,13 @@ ul.header-links {
                     border-bottom: 2px solid $border;
                 }
         }
+}
+
+.menu {
+    position: absolute;
+    right: 10%;
+    top: 3%;
+    display: none;
 }
 
 .main-header {
@@ -255,6 +263,9 @@ section {
              display: flex;
              align-items: center;
          }
+         p {
+             margin-top: 50px;
+         }
          .profile-image {
             justify-content: center;
             order: -1;
@@ -263,10 +274,47 @@ section {
                 }
          }
     }
+
+    .skills {
+        margin-top: 70px;
+    }
 }
 
 @media (max-width: 720px) {
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .header-links {
+        display: none;
+        background: $menuBackground;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        right: 9%;
+        top: 17%;
+            li {
+                margin-left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 15vh;
+                width: 81vw;
+            }
+    }
+
+    .about-me p {
+        line-height: 1.5;
+    }
+
     .skills{
+        margin-top: 60px;
         .skills-icons {
             flex-direction: column;
                 .skills-row {

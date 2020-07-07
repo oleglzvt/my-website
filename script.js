@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+    // mobile menu button functionality
+    $('.menu').on('click', function() {
+        // $('header').toggleClass('menu-blur');
+        $(".header-links").animate({width:'toggle'}, 500);
+    })
+
     // slide animation to the section when respective section link is clicked
     const scrollToSection = (sectionId) => {
         let section = $(`section[id='${sectionId}']`);

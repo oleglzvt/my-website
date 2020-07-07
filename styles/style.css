@@ -296,7 +296,7 @@ p {
 header,
 .skills,
 .contact {
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
 }
 
 .social-links li a:hover, .social-links li a:focus, .social-links li a:focus-within {
@@ -353,6 +353,7 @@ textarea {
 
 header {
   height: 100vh;
+  min-height: 360px;
 }
 
 .header-nav {
@@ -369,21 +370,28 @@ header {
   margin: 20px 0;
 }
 
-ul.header-links {
+.header-links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
 }
 
-ul.header-links li {
+.header-links li {
   margin-left: 30px;
 }
 
-ul.header-links li a:hover,
-ul.header-links li a:focus,
-ul.header-links li a:focus-within {
+.header-links li a:hover,
+.header-links li a:focus,
+.header-links li a:focus-within {
   border-bottom: 2px solid #BCBCBC;
+}
+
+.menu {
+  position: absolute;
+  right: 10%;
+  top: 3%;
+  display: none;
 }
 
 .main-header {
@@ -675,6 +683,9 @@ section {
         -ms-flex-align: center;
             align-items: center;
   }
+  .about-me p {
+    margin-top: 50px;
+  }
   .about-me .profile-image {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -686,9 +697,55 @@ section {
   .about-me .profile-image img {
     width: 70%;
   }
+  .skills {
+    margin-top: 70px;
+  }
 }
 
 @media (max-width: 720px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  .menu {
+    display: block;
+  }
+  .header-links {
+    display: none;
+    background: rgba(255, 255, 255, 0.99);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    right: 9%;
+    top: 17%;
+  }
+  .header-links li {
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 15vh;
+    width: 81vw;
+  }
+  .about-me p {
+    line-height: 1.5;
+  }
+  .skills {
+    margin-top: 60px;
+  }
   .skills .skills-icons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
