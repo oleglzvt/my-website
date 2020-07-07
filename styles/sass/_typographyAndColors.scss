@@ -43,10 +43,6 @@ h2,
     font-size: 3rem;
 }
 
-.main-header {
-    display: block;
-}
-
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
@@ -58,14 +54,14 @@ header,
     background-color: $mainBackground;
 }
 
-.copyright {
-    font-size: 1rem;
-}
-
 .social-links li a {
     &:hover,
     &:focus,
     &:focus-within {
         color: $border;
     }
+}
+
+.copyright {
+    font-size: 1rem;
 }

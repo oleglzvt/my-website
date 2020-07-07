@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 </head>
 
 <body>
@@ -17,15 +18,16 @@
                 <p class="logo">OL.</p>
                 <ul class="header-links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a id="about-link" href="#about">About</a></li>
+                    <li><a id="skills-link" href="#skills">Skills</a></li>
+                    <li><a id="projects-link" href="#projects">Projects</a></li>
+                    <li><a id="contact-link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
     
             <div class="header-intro">
                 <h1><span class="main-header">Welcome. I am</span>Oleg Lozovatyi</h1>
-                <p class="title">Front-End Developer</p>
+                <p class="title">Front-End / Web Developer</p>
         
                 <form action="get" action="./assets/oleg-lozovatyi-resume.pdf">
                     <button id="resume">Download CV</button>
@@ -66,33 +68,41 @@
                 </div>
 
                 <div class="skills-icons">
-                    <div>
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML 5</p>
+                    <div class="skills-row">
+                        <div>
+                            <i class="devicon-html5-plain"></i>
+                            <p>HTML 5</p>
+                        </div>
+                        <div>
+                            <i class="devicon-css3-plain"></i>
+                            <p>CSS 3</p>
+                        </div>
+                        <div>
+                            <i class="devicon-javascript-plain"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <!-- <div>
+                            <i class="devicon-jquery-plain"></i>
+                            <p>jQuery</p>
+                        </div> -->
                     </div>
-                    <div>
-                        <i class="devicon-css3-plain"></i>
-                        <p>CSS 3</p>
-                    </div>
-                    <div>
-                        <i class="devicon-javascript-plain"></i>
-                        <p>JavaScript</p>
-                    </div>
-                    <div>
-                        <i class="devicon-jquery-plain"></i>
-                        <p>jQuery</p>
-                    </div>
-                    <div>
-                        <i class="devicon-react-original"></i>
-                        <p>React.js</p>
-                    </div>
-                    <div>
-                        <i class="devicon-git-plain"></i>
-                        <p>Git</p>
-                    </div>
-                    <div>
-                        <i class="devicon-github-plain"></i>
-                        <p>GitHub</p>
+                    <div class="skills-row">
+                        <div>
+                            <i class="devicon-jquery-plain"></i>
+                            <p>jQuery</p>
+                        </div>
+                        <div>
+                            <i class="devicon-react-original"></i>
+                            <p>React.js</p>
+                        </div>
+                        <div>
+                            <i class="devicon-git-plain"></i>
+                            <p>Git</p>
+                        </div>
+                        <!-- <div>
+                            <i class="devicon-github-plain"></i>
+                            <p>GitHub</p>
+                        </div> -->
                     </div>
                 </div>
 

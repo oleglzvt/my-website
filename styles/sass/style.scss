@@ -75,6 +75,7 @@ ul.header-links {
 
 .main-header {
     margin-bottom: 20px;
+    display: block;
 }
 
 .title {
@@ -95,6 +96,9 @@ ul.header-links {
      p,
      .profile-image {
          width: 40%;
+         min-width: 350px;
+         display: flex;
+         align-items: center;
      }
      p {
          display: flex;
@@ -127,15 +131,22 @@ ul.header-links {
                 p {
                     visibility: hidden;
                 }
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                        &:hover p,
-                        &:focus p,
-                        &:focus-within p{
-                            visibility: visible;
-                        }
+        }
+}
+
+.skills-row {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                &:hover p,
+                &:focus p,
+                &:focus-within p{
+                    visibility: visible;
                 }
         }
 }
@@ -177,11 +188,18 @@ ul.header-links {
         }
 }
 
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 // footer styling
 footer {
     .social-links {
         width: 20%;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin: 0 auto;
             li a{
                 padding: 10px;
@@ -198,9 +216,87 @@ footer {
     }
 }
 
-.thank-you {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+// animation
+section {
+    visibility: hidden;
+}
+
+.animate {
+    visibility: visible;
+    animation: slideUp 1s ease-out;
+}
+  
+  @keyframes slideUp {
+    0% { opacity: 0; transform: translateY(25%); }   
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+// mobile design
+@media (max-width: 920px) {
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .header-line {
+            div {
+                width: 35%;
+            }
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+         p,
+         .profile-image {
+             width: 100%;
+             min-width: 250px;
+             display: flex;
+             align-items: center;
+         }
+         .profile-image {
+            justify-content: center;
+            order: -1;
+                img {
+                    width: 70%;
+                }
+         }
+    }
+}
+
+@media (max-width: 720px) {
+    .skills{
+        .skills-icons {
+            flex-direction: column;
+                .skills-row {
+                    width: 100%;
+                }
+        }
+    }
+    .project {
+        flex-direction: column;
+            .project-image,
+            .project-description {
+                width: 100%;
+                    div {
+                        text-align: center;
+                    }
+            }
+    }
+
+    .project-two,
+    .project-four {
+        .project-description {
+            order: 0;
+        }
+    }
+
+    input {
+        width: 45%;
+    }
+
+    textarea {
+        width: 93.5%;
+    }
 }
