@@ -110,8 +110,13 @@ header {
      }
      p {
          display: flex;
+         flex-direction: column;
          align-items: center;
          line-height: 2;
+            span {
+                display: block;
+                margin-top: 30px;
+            }
      }
 }
 
@@ -172,6 +177,11 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: center;
+                span {
+                    margin: 20px 0 10px 0;
+                    display: block;
+                    font-weight: bold;
+                }
         }   
 }
 
@@ -225,7 +235,8 @@ footer {
 }
 
 // animation
-section {
+section, 
+.project {
     visibility: hidden;
 }
 
@@ -310,7 +321,7 @@ section {
     }
 
     .about-me p {
-        line-height: 1.5;
+        line-height: 1.8;
     }
 
     .skills{

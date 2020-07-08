@@ -257,7 +257,7 @@ a,
 button {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  color: #000000;
+  color: #212121;
   font-weight: bold;
   text-decoration: none;
 }
@@ -324,7 +324,7 @@ button {
 
 button:hover, button:focus, button:focus-within {
   cursor: pointer;
-  border: 2px solid #000000;
+  border: 2px solid #212121;
 }
 
 ul {
@@ -442,10 +442,19 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   line-height: 2;
+}
+
+.about-me p span {
+  display: block;
+  margin-top: 30px;
 }
 
 .header-line {
@@ -548,6 +557,12 @@ header {
           justify-content: center;
 }
 
+.project .project-description span {
+  margin: 20px 0 10px 0;
+  display: block;
+  font-weight: bold;
+}
+
 .project-two .project-description,
 .project-four .project-description {
   -webkit-box-ordinal-group: 0;
@@ -617,7 +632,8 @@ footer p {
   padding: 20px 0;
 }
 
-section {
+section,
+.project {
   visibility: hidden;
 }
 
@@ -741,7 +757,7 @@ section {
     width: 81vw;
   }
   .about-me p {
-    line-height: 1.5;
+    line-height: 1.8;
   }
   .skills {
     margin-top: 60px;

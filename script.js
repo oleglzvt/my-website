@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     // trigger the animation on the sections
     $(window).scroll(function () {
-        $('section').each(function () {
+        $('section, .project').each(function () {
             let elementPosition = $(this).offset().top;
             let elementHeight = $(this).height();
             let topOfWindow = $(window).scrollTop();
