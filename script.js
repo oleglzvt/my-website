@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     // mobile menu button functionality
-    $('.menu').on('click', function() {
+    $('.header-nav').on('click', function() {
         // $('header').toggleClass('menu-blur');
         $(".header-links").animate({width:'toggle'}, 500);
     })
@@ -45,7 +45,7 @@ $(document).ready(function(){
             let topOfWindow = $(window).scrollTop();
     
             if (elementPosition < topOfWindow + elementHeight && elementPosition + elementHeight > topOfWindow) {
-                $(this).addClass("animate");
+                $(this).addClass('animate');
             } 
         });
     });

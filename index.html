@@ -26,20 +26,26 @@
                 </ul>
             </nav>
     
-            <div class="header-intro">
-                <h1><span class="main-header">Welcome. I am</span>Oleg Lozovatyi</h1>
-                <p class="title">Front-End / Web Developer</p>
-        
-                <form action="get" action="./assets/oleg-lozovatyi-resume.pdf">
-                    <button id="resume">Download CV</button>
-                </form>
+            <div class="header-content">
+                <div class="header-intro">
+                    <h1><span class="main-header">Welcome. I am</span>Oleg Lozovatyi</h1>
+                    <p class="title">Front-End / Web Developer</p>
+            
+                    <form action="get" action="./assets/oleg-lozovatyi-resume.pdf">
+                        <button id="resume">Download CV</button>
+                    </form>
+                </div>
+    
+                <div class="header-image">
+                    <img src="./assets/header-image.png" alt="a double expose picture of the man turning his back and the upside down view of the city">
+                </div>
             </div>
         </div>
     </header>
 
     <main>
         <section id="about" class="about">
-            <div class="wrapper">
+            <div class="wrapper ">
 
                 <div class="header-line">
                     <div></div>
@@ -49,7 +55,7 @@
 
                 <div class="about-me">
                     <p class="my-story">
-                        You have probably already guessed that my name is Oleg and I am a Toronto-based web developer. One of my biggest passions lies in making the Internet the most accessible, responsive, and fun place to interact with as possible. I build web pages and web applications from the idea to deployment. This website will demonstrate some of my recent projects and the technical skills I posess. <span>If you are in a search for a front-end / web developer, look no more. Let's work together and take the Web to the next level!</span>
+                        Hello again! You have probably already guessed that my name is Oleg and I am a Toronto-based web developer. One of my biggest passions lies in making the Internet the most accessible, responsive, and fun place to interact with as possible. I build web pages and web applications from the idea to deployment. This website will demonstrate some of my recent projects and the technical skills I posess. <span>If you are in a search for a front-end / web developer, look no more. Let's work together and take the Web to the next level!</span>
                     </p>
                     <div class="profile-image">
                         <img src="./assets/profile-picture.jpg" alt="oleg lozovatyi's portrait picture on white background">
@@ -132,7 +138,7 @@
                     </div>
                     <div class="project-description">
                         <p>
-                            Pirate Card Draw is an interactive pirate themed card game where two cards are drawn from the deck (one for the user, another one for the computer opponent). The player with the higher card gets a point. The game goes on till 5 points.<span>HTML5 | CSS3 | SASS | JavaScript | jQuery | Rest API | Git Collaboration</span>
+                            Pirate Card Draw is an interactive game where two cards are drawn from the deck (one for the user, another one for the computer opponent). The player with the higher card gets a point. The game goes on till 5 points. Designed and developed with <a href="http://cliffstonge.com/" target="_blank">Cliff St-Onge</a>.<span>HTML5 | CSS3 | SASS | JavaScript | jQuery | Rest API | Git Collaboration</span>
                         </p>
                         <div>
                             <button id="pirate-draw-github">Github</button>
@@ -178,7 +184,7 @@
                     </div>
     
                     <label class="sr-only" for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="7" maxlength="200" placeholder="Message"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="7" maxlength="1000" placeholder="Message"></textarea>
     
                     <button>Send a message</button>
                 </form>
