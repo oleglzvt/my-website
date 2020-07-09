@@ -1,0 +1,64 @@
+header {
+    height: 100vh;
+    min-height: 830px;
+    max-height: 1500px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $border;
+        .logo {
+            margin: 20px 0;
+        }
+}
+
+.header-links {
+    align-items: center;
+    margin: 0;
+        li {
+            margin-left: 30px;
+                a:hover,
+                a:focus,
+                a:focus-within {
+                    border-bottom: 2px solid $border;
+                }
+        }
+}
+
+.header-links-mobile {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    right: 10%;
+    top: 3%;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.title {
+    margin: 20px 0 50px 0;
+}
+
+.header-intro {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-image {
+    width: 43.5%;
+}

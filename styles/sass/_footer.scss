@@ -1,0 +1,19 @@
+footer {
+    .social-links {
+        width: 20%;
+        justify-content: space-evenly;
+        margin: 0 auto;
+            li a{
+                padding: 10px;
+                    &:hover,
+                    &:focus,
+                    &:focus-within {
+                        color: $border;
+                    }
+            }
+    }
+    p {
+        text-align: center;
+        padding: 20px 0;
+    }
+}

@@ -2,9 +2,17 @@ $(document).ready(function(){
 
     // mobile menu button functionality
     $('.header-nav').on('click', function() {
-        // $('header').toggleClass('menu-blur');
-        $(".header-links").animate({width:'toggle'}, 500);
+        if($(window).width() <= 720) {
+            $('.header-links-mobile').animate({width:'toggle'}, 500);
+        }
     })
+
+    // checking the window size to hide the mobile nav menu on resize
+    $(window).resize(function() {
+        if($(window).width() > 720) {
+            $('.header-links-mobile').hide();
+        }
+    }).resize();
 
     // slide animation to the section when respective section link is clicked
     const scrollToSection = (sectionId) => {

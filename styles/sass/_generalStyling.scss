@@ -1,0 +1,70 @@
+h1 {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 60px 0;
+}
+
+button {
+    border: 2px solid $border;
+    background: none;
+    padding: 10px 20px;
+        &:hover,
+        &:focus,
+        &:focus-within {
+            cursor: pointer;
+            border: 2px solid $textColor;
+        }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+input,
+textarea {
+    width: 30%;
+    font-size: 1.8rem;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid $border;
+    background: none;
+}
+
+
+textarea {
+    width: 74%;
+    margin: 40px 0;
+    resize: none;
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        div {
+            width: 40%;
+            height: 0;
+            border-bottom: 1px solid $border;
+        }
+}
+
+// animation
+section, 
+.project {
+    visibility: hidden;
+}
+
+.animate {
+    visibility: visible;
+    animation: slideUp 1s ease-out;
+}
+  
+  @keyframes slideUp {
+    0% { opacity: 0; transform: translateY(25%); }   
+    100% { opacity: 1; transform: translateY(0); }
+}

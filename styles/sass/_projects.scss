@@ -1,0 +1,37 @@
+.project {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+        .project-image,
+        .project-description {
+            width: 45%;
+        }
+        .project-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 1.5;
+                a {
+                    text-transform: capitalize;
+                    text-decoration: underline;
+                    color: $border;
+                        &:hover,
+                        &:focus,
+                        &:focus-within {
+                            color: $textColor;
+                        }
+                }
+                span {
+                    margin: 20px 0 10px 0;
+                    display: block;
+                    font-weight: bold;
+                }
+        }   
+}
+
+.project-two,
+.project-four {
+    .project-description {
+        order: -1;
+    }
+}
