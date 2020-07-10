@@ -20,19 +20,19 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop: section.offset().top},'slow');
     }
     
-    $("#about-link").on('click', function() {
+    $(".about-link").on('click', function() {
        scrollToSection('about');
     });
 
-    $("#skills-link").on('click', function() {
+    $(".skills-link").on('click', function() {
        scrollToSection('skills');
     });
 
-    $("#projects-link").on('click', function() {
+    $(".projects-link").on('click', function() {
        scrollToSection('projects');
     });
 
-    $("#contact-link").on('click', function() {
+    $(".contact-link").on('click', function() {
        scrollToSection('contact');
     });
 
