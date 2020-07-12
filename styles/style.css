@@ -555,10 +555,6 @@ header {
   font-size: 6rem;
 }
 
-.skills .skills-icons p {
-  visibility: hidden;
-}
-
 .skills-row {
   width: 50%;
   display: -webkit-box;
@@ -583,12 +579,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.skills-row div:hover p,
-.skills-row div:focus p,
-.skills-row div:focus-within p {
-  visibility: visible;
+  width: calc(100%/3);
 }
 
 .project {

@@ -7,9 +7,9 @@
                 i {
                     font-size: 6rem;
                 }
-                p {
-                    visibility: hidden;
-                }
+                // p {
+                //     visibility: hidden;
+                // }
         }
 }
 
@@ -22,10 +22,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-                &:hover p,
-                &:focus p,
-                &:focus-within p{
-                    visibility: visible;
-                }
+            width: calc(100%/3);
         }
 }
