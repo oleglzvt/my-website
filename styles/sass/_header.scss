@@ -7,6 +7,7 @@ header {
 .header-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid $border;
         .logo {
             margin: 20px 0;
@@ -31,9 +32,6 @@ header {
 }
 
 .menu {
-    position: absolute;
-    right: 10%;
-    top: 3%;
     display: none;
 }
 
