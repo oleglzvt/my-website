@@ -87,6 +87,20 @@ $(document).ready(function(){
         ) 
     })
 
+    $('#a-bitter-parent-github').on('click', function() {
+        window.open(
+            'https://github.com/oleglzvt/a-bitter-parent',
+            '_blank'
+        ) 
+    })
+
+    $('#a-bitter-parent-live').on('click', function() {
+        window.open(
+            'https://oleglzvt.github.io/a-bitter-parent/',
+            '_blank'
+        ) 
+    })
+
     $('#supernatural-github').on('click', function() {
         window.open(
             'https://github.com/oleglzvt/olegLozovatyiProjectThree',
