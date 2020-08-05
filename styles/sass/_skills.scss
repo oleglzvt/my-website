@@ -8,6 +8,9 @@
                     font-size: 6rem;
                 }
         }
+        .second-row {
+            margin-top: 50px;
+        }
 }
 
 .skills-row {
@@ -20,5 +23,8 @@
             flex-direction: column;
             align-items: center;
             width: calc(100%/3);
+        }
+        p {
+            text-align: center;
         }
 }
