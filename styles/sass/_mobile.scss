@@ -141,7 +141,27 @@
         width: 100%;
     }
 
+    footer {
+        padding-bottom: 50px;
+    }
+
     footer .social-links {
         width: 100%;
+    }
+
+    .arrow-up-mobile {
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+        text-align: center;
+        background-color: rgba(210, 210, 210, .9);
+        color: grey;
+        font-size: 2.5rem;
+        z-index: 3;
+        padding: 10px;
+        animation: slideUp .5s ease-out;
+            i {
+                animation: bounce 2s infinite;
+            }
     }
 }

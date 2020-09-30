@@ -1,14 +1,14 @@
-$(document).ready(function(){
+$(document).ready(() => {
 
     // mobile menu button functionality
-    $('.header-nav').on('click', function() {
+    $('.header-nav').on('click', () => {
         if($(window).width() <= 720) {
             $('.header-links-mobile').animate({width:'toggle'}, 500);
         }
     })
 
     // checking the window size to hide the mobile nav menu on resize
-    $(window).resize(function() {
+    $(window).resize(() => {
         if($(window).width() > 720) {
             $('.header-links-mobile').hide();
         }
@@ -16,23 +16,27 @@ $(document).ready(function(){
 
     // slide animation to the section when respective section link is clicked
     const scrollToSection = (sectionId) => {
-        let section = $(`section[id='${sectionId}']`);
+        let section = $(`[id='${sectionId}']`);
         $('html,body').animate({scrollTop: section.offset().top},'slow');
     }
+
+    $('.arrow-up').on('click', () => {
+        scrollToSection('home')
+    })
     
-    $(".about-link").on('click', function() {
+    $(".about-link").on('click', () => {
        scrollToSection('about');
     });
 
-    $(".skills-link").on('click', function() {
+    $(".skills-link").on('click', () => {
        scrollToSection('skills');
     });
 
-    $(".projects-link").on('click', function() {
+    $(".projects-link").on('click', () => {
        scrollToSection('projects');
     });
 
-    $(".contact-link").on('click', function() {
+    $(".contact-link").on('click', () => {
        scrollToSection('contact');
     });
 
@@ -119,4 +123,24 @@ $(document).ready(function(){
     $('#go-back').on('click', function() {
         window.location.href = './index.html'
     })
+
+    // slide up button appear condition
+    let upBtn = $('#arrow-up');
+    upBtn.hide();
+    $(window).scroll(() => {
+        if ($(window).scrollTop() > 300) {
+          upBtn.show();
+        } else {
+          upBtn.hide();
+        }
+    });
+
+    // function to switch between desktop and mobile versions of the slide up button
+    $(window).resize(() => {
+        if ($(window).width() <= 720) {
+            upBtn.removeClass('arrow-up').addClass('arrow-up-mobile')
+        } else {
+            upBtn.removeClass('arrow-up-mobile').addClass('arrow-up')
+        }
+    }).resize();
 });
