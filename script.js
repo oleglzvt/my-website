@@ -9,8 +9,11 @@ $(document).ready(() => {
 
     // checking the window size to hide the mobile nav menu on resize
     $(window).resize(() => {
-        if($(window).width() > 720) {
-            $('.header-links-mobile').hide();
+        if ($(window).width() > 720) {
+            // $('.header-links-mobile').hide();
+            $('#header-links').removeClass('header-links-mobile').addClass('header-links')
+        } else if ($(window).width() <= 720) {
+            $('#header-links').removeClass('header-links').addClass('header-links-mobile')
         }
     }).resize();
 

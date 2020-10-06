@@ -61,6 +61,8 @@ textarea {
     color: grey;
     z-index: 3;
     animation: slideLeft .7s ease-out;
+    border: none;
+    background: none;
         &:hover {
             cursor: pointer;
         }
