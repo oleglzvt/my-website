@@ -53,6 +53,7 @@
     }
 
     .header-links-mobile {
+        display: none;
         background: $menuBackground;
         flex-direction: column;
         position: absolute;
@@ -73,6 +74,10 @@
                         border-bottom: 1px solid $border;
                     }
             }
+    }
+
+    .menu {
+        display: block;
     }
 
     .header-image {
