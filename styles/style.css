@@ -276,6 +276,32 @@ img {
   }
 }
 
+@-webkit-keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @-webkit-keyframes slideLeft {
   0% {
     opacity: 0;
@@ -981,8 +1007,8 @@ footer p {
     font-size: 2.5rem;
     z-index: 3;
     padding: 10px;
-    -webkit-animation: slideUp .5s ease-out;
-            animation: slideUp .5s ease-out;
+    -webkit-animation: slideDown .5s ease-out;
+            animation: slideDown .5s ease-out;
   }
   .arrow-up-mobile i {
     -webkit-animation: bounce 2s infinite;
